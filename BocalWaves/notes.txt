@@ -1,0 +1,32 @@
+1 : Amplify : Buggy, do notinput sub zero values. Not very interesting
+
+3:Bass and Treble: Color and saturation effects,
+	Bass under 0 will make the the color very vibrant, then foggy and blurry if the value exceed 0
+	Trebble seems to do the same but reversed, and with negative colors.
+
+4: Change Pitch : Heavily distort pictures horizontally, similar to a bad analogic TV signal. Use very short ranges 	around 0. Extremely short ranges like [-0.00001, 0.00001] Seems to keep some colors separated as YMC
+
+19 : Phaser : One of the best effects, analog-like glitch, violent tv shutdown
+	Stage: 2 is softer than 20, which is more acidic
+	Frequency range : Interference scanlines. No scanlines with values under 0.01
+	Feedback : push, drip, sweep colors to the right. Positive values will sweep un an "aplat" way while 	negatives will wipe in a more echoed way.
+	
+
+22 Reverb : Twist the colors in the lighter parts of the image, similar to an iridescent fuel puddle.
+	RoomSize : 0 makes it wavy, 100 makes the rainbow more straight
+	delay : the more high the value is, the more the waves will translate to the right
+	Reverberation : A low value will make the rainbow appear unified while a high value will
+			 apply column-like separation between the waves (can also make the colors blink)
+	HfDamp : Somewhat soften the image, set to the default value as it was barely noticeable
+	ToneLow: Add more fuel/iridescent rainbow ink to the effect
+	ToneHigh: Dissolves the fuel puddle with a drizzle-like effect
+	WetGain: higher is the value, more visible is the effect, picture the fuel seeping through the picture
+	DryGain: The lower is the value, the frostier the picture will be.
+	StereoWidth: No effect known, set at default value.
+
+27: Wahwah : old tv blanc and white waves, magnet on cathodic screen
+	FreqRange : size of the waves, 0 for one big horizontal wave. 3.133333 frequency is nice (freq vary with pic size) (e.g. ondulations if 	you do 3.13 >>> 3.14)
+	Depth :(dflt 70) 0 is very blurry and abstract, 100 is more precise
+	Resonance :(dflt 2.5) Low value kind of soften everything
+	Offset : Shift waves to the left
+	
