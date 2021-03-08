@@ -4,13 +4,21 @@
 	Bass under 0 will make the the color very vibrant, then foggy and blurry if the value exceed 0
 	Trebble seems to do the same but reversed, and with negative colors.
 
-4: Change Pitch : Heavily distort pictures horizontally, similar to a bad analogic TV signal. Use very short ranges 	around 0. Extremely short ranges like [-0.00001, 0.00001] Seems to keep some colors separated as YMC
+4: Change Pitch : Heavily distort pictures horizontally, similar to a bad analogic TV signal. Use very short ranges 	around 0. Extremely short ranges like [-0.00001, 0.00001] Seems to keep some colors separated as YMC. Can be long.
+
+5: Change Speed : bend the frame with a moire effect, VERY violent, destroy the image in a moire noise if the value is more than 0.1.
+
+15: Loudness Normalization : LUFS ranges from -145 to 0 and the lower is the value, the more acidic the picture becomes. RMS doesn't seems to do anything but that coulb be a code issue.  so I removed it.
 
 19 : Phaser : One of the best effects, analog-like glitch, violent tv shutdown
 	Stage: 2 is softer than 20, which is more acidic
 	Frequency range : Interference scanlines. No scanlines with values under 0.01
-	Feedback : push, drip, sweep colors to the right. Positive values will sweep un an "aplat" way while 	negatives will wipe in a more echoed way.
-	
+	Feedback : Main parameter. push, drip, sweep colors to the right. Positive values will sweep un an "aplat" way while 	negatives will wipe in a more echoed way.
+
+192: Phaser with more commands, phaser notes still applies
+	DryWet : "opacity" of the phaser effect, 0 does nothing, 255 does it full force (default value at 128)
+	Phase:  rotates the waves
+	Depth: Colorful effect which is kinda on his own, light picture shift on the right. Not much impact on other settings, best to use with other light effects and keep Feedback at constant value.
 
 22 Reverb : Twist the colors in the lighter parts of the image, similar to an iridescent fuel puddle.
 	RoomSize : 0 makes it wavy, 100 makes the rainbow more straight
@@ -25,8 +33,11 @@
 	StereoWidth: No effect known, set at default value.
 
 27: Wahwah : old tv blanc and white waves, magnet on cathodic screen
-	FreqRange : size of the waves, 0 for one big horizontal wave. 3.133333 frequency is nice (freq vary with pic size) (e.g. ondulations if 	you do 3.13 >>> 3.14)
-	Depth :(dflt 70) 0 is very blurry and abstract, 100 is more precise
-	Resonance :(dflt 2.5) Low value kind of soften everything
+a lot to discover on this one.
+	FreqRange : size of the waves, 0.1 for one big horizontal wave. 3.133333 frequency is nice (freq vary with pic size) (e.g. ondulations if 	you do 3.13 >>> 3.14)< complicated to work with
+	Depth :(dflt 70) 0 is very blurry and abstract, 100 is more precise (basically the force of the effect)
+	Resonance :(dflt 2.5) Low value kind of soften/melt everything, but makes the base image more clearer ?
 	Offset : Shift waves to the left
+Phase : translate the waves from the top to the bottom ?
+No effect with thoses settings :  Freq=0.1 Phase=0 Depth=100 Resonance=0.1 Offset=100 Gain=-6
 	
