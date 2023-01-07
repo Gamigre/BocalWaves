@@ -13,7 +13,7 @@ in order to use this script as intended.
 (user guide is a complete WIP, use at your own discretion) 
 ### Setting up Bocalwaves 
 
-#####1. Python
+##### 1. Python
 The script uses several python plugin to work so be sure to install them:
 - pip install colorama
 - pip install sox
