@@ -1,4 +1,5 @@
-# BocalWaves
+![banner](http://gregoire.broadcastingfuture.online/docs/BWbanner.png "banner")
+
 An Audacity script aimed to ease sonification-based glitch art. ***Non commercial use only***. Please reach out if you're a studio or an agency interested in working with bocalwaves.
 
 You will need to have up-to-date versions of thoses softwares :
