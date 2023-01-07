@@ -21,7 +21,7 @@ The script uses several python plugin to work so be sure to install them:
 
 You might need a proper version of sox and a proper version of ffmpeg installed on your machine and in your PATH.
 
-#####2. Audacity
+##### 2. Audacity
 Audacity must be installed (of course) and should have a certain way to import raw files set up. In order to do this you just need to import manually one raw file like this:
 1.  Open Audacity
 2. File > Import > Raw Data
@@ -40,7 +40,7 @@ Leave the rest as it is (0, 100, 44100) and click on import
 
 One last thing to do is to activate the pipe scripts in audacity, which allow us to communicate with audacity with python. It's in the preferences Under "Modules" enable mod-script-pipe if it isn't already.
 
-#####3. Folder structure
+##### 3. Folder structure
 Here's how to set up your folder to work with Bocalwaves:
 1. Create a folder named "Bocalwaves" on a disk with several gigabytes available to make room for the script to work and place **bocalwaves.py** inside, along with **pipeclient.py**, a script you'll get directly from Audacity themselves here : https://github.com/audacity/audacity/blob/d5685fe034bf0f3138480893a65190b7f51b7890/scripts/piped-work/pipeclient.py
 
