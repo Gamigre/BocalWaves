@@ -27,9 +27,9 @@ Audacity must be installed (of course) and should have a certain way to import r
 3. Choose a .bmp image file, as we will use that later (you can do that with any file tbh, but bmp should be used just to be sure)
 
 4. Settings to use :
-Encoding: U-Law 
-Bytes order: Little endian 
-Channels: 1 Channel (Mono) 
+Encoding: U-Law /
+Bytes order: Little endian /
+Channels: 1 Channel (Mono) /
 Leave the rest as it is (0, 100, 44100) and click on import
 
 5. Export the file; File>Export>Export audio..
